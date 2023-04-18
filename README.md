@@ -9,7 +9,7 @@
 [![PyPI](https://img.shields.io/pypi/v/ekumenlabs_config?logo=python)](https://pypi.org/project/ekumenlabs_config/)
 
 
-This is a very simple project to use/store configurations persisted in a database (accessed via tortoise-orm).
+This is a very simple project to use/store configurations persisted in a database (accessed via tortoise-orm). It can be used in conjunction with [tortoise-data-migration](https://pypi.org/project/tortoise-data-migration/) to set the default configuration values.
 
 
 ### Examples
