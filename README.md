@@ -9,6 +9,23 @@
 [![PyPI](https://img.shields.io/pypi/v/ekumenlabs_config?logo=python)](https://pypi.org/project/ekumenlabs_config/)
 
 
+This is a very simple project to use/store configurations persisted in a database (accessed via tortoise-orm).
+
+
+### Examples
+
+
+```python
+from ekumenlabs_config import get_bool_config
+
+
+async def do_something():
+    if await get_bool_config("simple.example"):
+        print("Yes, it is simple!")
+
+```
+
+
 ## Installation
 
 ### Pip
