@@ -4,6 +4,10 @@
 [![codecov](https://codecov.io/gh/Ekumen-OS/ekumenlabs_config/branch/main/graph/badge.svg?token=mRGjPkrBjt)](https://codecov.io/gh/Ekumen-OS/ekumenlabs_config)
 [![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![poetry-managed](https://img.shields.io/badge/poetry-managed-blueviolet)](https://python-poetry.org)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ekumenlabs_config)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/ekumenlabs_config)
+[![PyPI](https://img.shields.io/pypi/v/ekumenlabs_config?logo=python)](https://pypi.org/project/ekumenlabs_config/)
+
 
 ## Installation
 
