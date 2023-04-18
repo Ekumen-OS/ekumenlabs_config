@@ -138,7 +138,7 @@ asyncmy = ["asyncmy (>=0.2.5,<0.3.0)"]
 asyncodbc = ["asyncodbc (>=0.1.1,<0.2.0)"]
 asyncpg = ["asyncpg"]
 accel = ["ciso8601", "orjson", "uvloop"]
-psycopg = ["psycopg[binary,pool] (==3.0.12)"]
+psycopg = ["psycopg[pool,binary] (==3.0.12)"]
 
 [[package]]
 name = "typing-extensions"
@@ -148,10 +148,18 @@ category = "main"
 optional = false
 python-versions = ">=3.7"
 
+[[package]]
+name = "versionbump"
+version = "1.1.1"
+description = "Generate version strings based on semantic versioning rules."
+category = "dev"
+optional = false
+python-versions = "*"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "c04443b6a778a4610b624ac07885d5cffd9037bb16d7a42bf0f98bf64cc12a91"
+content-hash = "7ff8c8ad1278a5bd983fe164ad19876c704182985910fcc9849930c79341e767"
 
 [metadata.files]
 aiosqlite = []
@@ -168,3 +176,4 @@ pytz = []
 tomli = []
 tortoise-orm = []
 typing-extensions = []
+versionbump = []
