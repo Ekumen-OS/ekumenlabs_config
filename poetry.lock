@@ -16,6 +16,26 @@ files = [
 typing_extensions = ">=3.7.2"
 
 [[package]]
+name = "anyio"
+version = "4.12.1"
+description = "High-level concurrency and networking framework on top of asyncio or Trio"
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = [
+    {file = "anyio-4.12.1-py3-none-any.whl", hash = "sha256:d405828884fc140aa80a3c667b8beed277f1dfedec42ba031bd6ac3db606ab6c"},
+    {file = "anyio-4.12.1.tar.gz", hash = "sha256:41cfcc3a4c85d3f05c932da7c26d0201ac36f72abd4435ba90d0464a3ffed703"},
+]
+
+[package.dependencies]
+exceptiongroup = {version = ">=1.0.2", markers = "python_version < \"3.11\""}
+idna = ">=2.8"
+typing_extensions = {version = ">=4.5", markers = "python_version < \"3.13\""}
+
+[package.extras]
+trio = ["trio (>=0.31.0) ; python_version < \"3.10\"", "trio (>=0.32.0) ; python_version >= \"3.10\""]
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -139,7 +159,7 @@ version = "1.1.1"
 description = "Backport of PEP 654 (exception groups)"
 optional = false
 python-versions = ">=3.7"
-groups = ["dev"]
+groups = ["main", "dev"]
 markers = "python_version == \"3.10\""
 files = [
     {file = "exceptiongroup-1.1.1-py3-none-any.whl", hash = "sha256:232c37c63e4f682982c8b6459f33a8981039e5fb8756b2074364e5055c498c9e"},
@@ -148,6 +168,21 @@ files = [
 
 [package.extras]
 test = ["pytest (>=6)"]
+
+[[package]]
+name = "idna"
+version = "3.11"
+description = "Internationalized Domain Names in Applications (IDNA)"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "idna-3.11-py3-none-any.whl", hash = "sha256:771a87f49d9defaf64091e6e6fe9c18d4833f140bd19464795bc32d966ca37ea"},
+    {file = "idna-3.11.tar.gz", hash = "sha256:795dafcc9c04ed0c1fb032c2aa73654d8e8c5023a7df64a53f39190ada629902"},
+]
+
+[package.extras]
+all = ["flake8 (>=7.1.1)", "mypy (>=1.11.2)", "pytest (>=8.3.2)", "ruff (>=0.6.2)"]
 
 [[package]]
 name = "iniconfig"
@@ -218,14 +253,14 @@ windows-terminal = ["colorama (>=0.4.6)"]
 
 [[package]]
 name = "pypika-tortoise"
-version = "0.6.1"
+version = "0.6.3"
 description = "Forked from pypika and streamline just for tortoise-orm"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "pypika_tortoise-0.6.1-py3-none-any.whl", hash = "sha256:da15886f37b347e71f0869f9e4ee2f9259e6bb57455b45299c6c23d7927cbb6e"},
-    {file = "pypika_tortoise-0.6.1.tar.gz", hash = "sha256:36ec2c88c255b9ed7ef49a6068cdeac10dafd4ddfeb828205d3afc092507fc3a"},
+    {file = "pypika_tortoise-0.6.3-py3-none-any.whl", hash = "sha256:762e508093f4d73d3654cdde5bce8f92f8f41d999993c44d972d4f1703a663df"},
+    {file = "pypika_tortoise-0.6.3.tar.gz", hash = "sha256:6e17f00e77e78468836cb5c63eb6dc01445f83b1167e4f29f1c678949179c079"},
 ]
 
 [[package]]
@@ -253,18 +288,6 @@ tomli = {version = ">=1", markers = "python_version < \"3.11\""}
 dev = ["argcomplete", "attrs (>=19.2)", "hypothesis (>=3.56)", "mock", "requests", "setuptools", "xmlschema"]
 
 [[package]]
-name = "pytz"
-version = "2023.3"
-description = "World timezone definitions, modern and historical"
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "pytz-2023.3-py2.py3-none-any.whl", hash = "sha256:a151b3abb88eda1d4e34a9814df37de2a80e301e68ba0fd856fb9b46bfbbbffb"},
-    {file = "pytz-2023.3.tar.gz", hash = "sha256:1d8ce29db189191fb55338ee6d0387d82ab59f3d00eac103412d64e0ebd0c588"},
-]
-
-[[package]]
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
@@ -278,30 +301,47 @@ files = [
 ]
 
 [[package]]
-name = "tortoise-orm"
-version = "0.25.1"
-description = "Easy async ORM for python, built with relations in mind"
+name = "tomlkit"
+version = "0.14.0"
+description = "Style preserving TOML library"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
+markers = "python_version == \"3.10\""
 files = [
-    {file = "tortoise_orm-0.25.1-py3-none-any.whl", hash = "sha256:df0ef7e06eb0650a7e5074399a51ee6e532043308c612db2cac3882486a3fd9f"},
-    {file = "tortoise_orm-0.25.1.tar.gz", hash = "sha256:4d5bfd13d5750935ffe636a6b25597c5c8f51c47e5b72d7509d712eda1a239fe"},
+    {file = "tomlkit-0.14.0-py3-none-any.whl", hash = "sha256:592064ed85b40fa213469f81ac584f67a4f2992509a7c3ea2d632208623a3680"},
+    {file = "tomlkit-0.14.0.tar.gz", hash = "sha256:cf00efca415dbd57575befb1f6634c4f42d2d87dbba376128adb42c121b87064"},
+]
+
+[[package]]
+name = "tortoise-orm"
+version = "1.0.0"
+description = "Easy async ORM for python, built with relations in mind"
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "tortoise_orm-1.0.0-py3-none-any.whl", hash = "sha256:4f5b609f6e41914a64c9a80233fc5d2e612e7eb1c7b880627d67cd0710ee9bb5"},
+    {file = "tortoise_orm-1.0.0.tar.gz", hash = "sha256:d66188f70c74fd7ea24f294f42f0b16ba9a2b6cdd95d0fcb2fb6cb41759947f4"},
 ]
 
 [package.dependencies]
 aiosqlite = ">=0.16.0,<1.0.0"
+anyio = "*"
 iso8601 = {version = ">=2.1.0,<3.0.0", markers = "python_version < \"4.0\""}
-pypika-tortoise = {version = ">=0.6.1,<1.0.0", markers = "python_version < \"4.0\""}
-pytz = "*"
+pypika-tortoise = ">=0.6.3,<1.0.0"
+tomlkit = {version = ">=0.11.4,<1.0.0", markers = "python_version < \"3.11\""}
+typing-extensions = {version = ">=4.1.0", markers = "python_version < \"3.11\""}
 
 [package.extras]
 accel = ["ciso8601 ; sys_platform != \"win32\" and implementation_name == \"cpython\"", "orjson", "uvloop ; sys_platform != \"win32\" and implementation_name == \"cpython\""]
 aiomysql = ["aiomysql"]
-asyncmy = ["asyncmy (>=0.2.8,<1.0.0) ; python_version < \"4.0\""]
+asyncmy = ["asyncmy (>=0.2.11,<1.0.0)"]
 asyncodbc = ["asyncodbc (>=0.1.1,<1.0.0) ; python_version < \"4.0\""]
 asyncpg = ["asyncpg"]
+ipython = ["ipython", "nest-asyncio (>=1.6.0)"]
 psycopg = ["psycopg[binary,pool] (>=3.0.12,<4.0.0)"]
+ptpython = ["ptpython (>=3.0.0)"]
 
 [[package]]
 name = "typing-extensions"
@@ -329,4 +369,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "819babf058e1044191fd2f84ae569843f881819b714e7bdce32a4bc9b27a0395"
+content-hash = "e0faa1332c8eb991e8525fd4d7a43a437d19d7c0a45218fc8cc80ec87d52dbc8"

@@ -17,7 +17,7 @@ classifiers = [ "Development Status :: 4 - Beta", "Framework :: AsyncIO", "Inten
 
 [tool.poetry.dependencies]
 python = "^3.10"
-tortoise-orm = ">=0.19.2,<0.26.0"
+tortoise-orm = ">=0.19.2,<1.1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^8.4.1"
