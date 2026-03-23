@@ -267,14 +267,14 @@ windows-terminal = ["colorama (>=0.4.6)"]
 
 [[package]]
 name = "pypika-tortoise"
-version = "0.6.3"
+version = "0.6.5"
 description = "Forked from pypika and streamline just for tortoise-orm"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "pypika_tortoise-0.6.3-py3-none-any.whl", hash = "sha256:762e508093f4d73d3654cdde5bce8f92f8f41d999993c44d972d4f1703a663df"},
-    {file = "pypika_tortoise-0.6.3.tar.gz", hash = "sha256:6e17f00e77e78468836cb5c63eb6dc01445f83b1167e4f29f1c678949179c079"},
+    {file = "pypika_tortoise-0.6.5-py3-none-any.whl", hash = "sha256:9194ac6ce6ac9bdfc6e959c831c5788ef05ee1371e82ba281b0eb75f4a2bd4f1"},
+    {file = "pypika_tortoise-0.6.5.tar.gz", hash = "sha256:64d96c9b88450f6360ad22a7063933b6a90961a7317f04b2b63c98fd5d705506"},
 ]
 
 [[package]]
@@ -329,21 +329,21 @@ files = [
 
 [[package]]
 name = "tortoise-orm"
-version = "1.1.6"
+version = "1.1.7"
 description = "Easy async ORM for python, built with relations in mind"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "tortoise_orm-1.1.6-py3-none-any.whl", hash = "sha256:70bd10d28dff9df889161e190c460c2339169ef47986765647ec53cb554031b2"},
-    {file = "tortoise_orm-1.1.6.tar.gz", hash = "sha256:30095a77aa7c3eb3ede1baf4b390a66b994dc7c4d0d06a609d23a16c50e55d0c"},
+    {file = "tortoise_orm-1.1.7-py3-none-any.whl", hash = "sha256:b640b786905891cc120aa16d1a7af18cd54b111a812f9b1c1d1c7b294d62949d"},
+    {file = "tortoise_orm-1.1.7.tar.gz", hash = "sha256:a0f0f27f9c92547739f0a3f0862c257ab64d8baadbc0e548cbcfa2d70bcbe275"},
 ]
 
 [package.dependencies]
 aiosqlite = ">=0.16.0,<1.0.0"
 anyio = "*"
 iso8601 = {version = ">=2.1.0,<3.0.0", markers = "python_version < \"4.0\""}
-pypika-tortoise = ">=0.6.3,<1.0.0"
+pypika-tortoise = ">=0.6.5,<1.0.0"
 tomlkit = {version = ">=0.11.4,<1.0.0", markers = "python_version < \"3.11\""}
 typing-extensions = {version = ">=4.1.0", markers = "python_version < \"3.11\""}
 
