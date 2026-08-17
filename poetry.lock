@@ -329,14 +329,14 @@ files = [
 
 [[package]]
 name = "tortoise-orm"
-version = "1.1.7"
+version = "1.1.8"
 description = "Easy async ORM for python, built with relations in mind"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "tortoise_orm-1.1.7-py3-none-any.whl", hash = "sha256:b640b786905891cc120aa16d1a7af18cd54b111a812f9b1c1d1c7b294d62949d"},
-    {file = "tortoise_orm-1.1.7.tar.gz", hash = "sha256:a0f0f27f9c92547739f0a3f0862c257ab64d8baadbc0e548cbcfa2d70bcbe275"},
+    {file = "tortoise_orm-1.1.8-py3-none-any.whl", hash = "sha256:3f771365c54297543b3b2b7fab4ecb03e89de0a68a41328d2e171c043e08e911"},
+    {file = "tortoise_orm-1.1.8.tar.gz", hash = "sha256:09e27be9db148824dacea470d01018ab571676f94aa5428a05bcaec44c413ec7"},
 ]
 
 [package.dependencies]
@@ -350,7 +350,7 @@ typing-extensions = {version = ">=4.1.0", markers = "python_version < \"3.11\""}
 [package.extras]
 accel = ["ciso8601 ; sys_platform != \"win32\" and implementation_name == \"cpython\"", "orjson", "uvloop ; sys_platform != \"win32\" and implementation_name == \"cpython\""]
 aiomysql = ["aiomysql"]
-asyncmy = ["asyncmy (>=0.2.11,<1.0.0)"]
+asyncmy = ["asyncmy (>=0.2.12,<1.0.0)"]
 asyncodbc = ["asyncodbc (>=0.1.1,<1.0.0) ; python_version < \"4.0\""]
 asyncpg = ["asyncpg"]
 ipython = ["ipython", "nest-asyncio (>=1.6.0)"]
